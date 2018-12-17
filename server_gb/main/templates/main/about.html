@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Дефолтный магазин - О магазине</title>
-</head>
-<body>
-    <h1>О магазине</h1>
-    <h2>Здесь будут данные о магазине.</h2>
-    <ul>
-        <li>
-            <a href="/">Главная</a>
-        </li>
-        <li>
-            <a href="/contacts/">Конткаты</a>
-        </li>
-        <li>
-            <a href="/about/">О магазине</a>
-        </li>
-    </ul>
-</body>
-</html>
+{% extends 'master.html' %}
+{% block title %}
+О магазине
+{% endblock %}
+
+{% block page_content %}
+<span>Здесь будут данные о самом магазине.</span>
+{% endblock %}

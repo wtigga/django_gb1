@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Дефолтный магазин - Контакты</title>
-</head>
-<body>
-    <h1>Контакты</h1>
-    <h2>Здесь будут конткаты магазина.</h2>
-    <ul>
-        <li>
-            <a href="/">Главная</a>
-        </li>
-        <li>
-            <a href="/contacts/">Конткаты</a>
-        </li>
-        <li>
-            <a href="/about/">О магазине</a>
-        </li>
-    </ul>
-</body>
-</html>
+{% extends 'master.html' %}
+{% block title %}
+Контакты магазина
+{% endblock %}
+
+{% block page_content %}
+<span>Здесь будет инфа о том, как связаться с магазином.</span>
+{% endblock %}
