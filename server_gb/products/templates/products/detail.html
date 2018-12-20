@@ -1,0 +1,12 @@
+{% extends 'master.html' %}
+{% block title %}
+Детали товара
+{% endblock %}
+
+{% block page_content %}
+    {% if object %}
+    {{ object }}
+    {% else %}
+    <span>Ничего не найдено, извинити.</span>
+    {% endif %}
+{% endblock %}

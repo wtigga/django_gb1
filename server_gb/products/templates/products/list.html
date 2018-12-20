@@ -1,0 +1,18 @@
+{% extends 'master.html' %}
+{% block title %}
+Список товаров
+{% endblock %}
+
+{% block page_content %}
+    {% if object %}
+    {{ object }}
+    {% else %}
+    <ul>
+        {% for itm in products %}
+        <li>
+            {{ itm }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endblock %}
